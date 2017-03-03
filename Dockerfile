@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get -yq dist-upgrade 
 RUN apt-get -yq install build-essential git
-RUN apt-get -yq install python-dev python-pip && pip install pycrypto
+RUN apt-get -yq install python-dev python-pip && pip install --upgrade pip  && pip install pycrypto
 RUN mkdir -p /usr/local/lib/python2.7/dist-packages/ && cd /usr/local/lib/python2.7/dist-packages/ && git clone https://github.com/mitshell/CryptoMobile.git && cd CryptoMobile 
 RUN cd /usr/local/lib/python2.7/dist-packages/CryptoMobile && gcc -c -O2 -fPIC Kasumi.c -o Kasumi.o && gcc -shared -o Kasumi.so Kasumi.o
 RUN cd /usr/local/lib/python2.7/dist-packages/CryptoMobile && gcc -c -O2 -fPIC SNOW_3G.c -o SNOW_3G.o && gcc -shared -o SNOW_3G.so SNOW_3G.o
