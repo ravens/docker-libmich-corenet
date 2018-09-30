@@ -3,6 +3,8 @@ version: '2'
 services:
   pycorenet:
     build: ./
+    volumes:
+      - "./Corenet.ipynb:/root/corenet/Corenet.ipynb" 
     ports:
       - "8888:8888"
-    
+      - "2152:2152/udp"    
