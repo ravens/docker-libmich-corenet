@@ -1,6 +1,8 @@
 # docker-libmich-corenet
 Recipe to build and run quickly corenet from Benoit Michau. 
 
+[![Build Status](https://travis-ci.org/ravens/docker-libmich-corenet.svg?branch=master)](https://travis-ci.org/ravens/docker-libmich-corenet)
+
 ## prereqs
 
 A hosting machine with a kernel with SCTP support. "Native" Docker Mac does not support this, while the rest of the docker ecosystem is in good progress :
