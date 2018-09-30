@@ -1,6 +1,12 @@
 # docker-libmich-corenet
 Recipe to build and run quickly corenet from Benoit Michau. 
 
+[![Build Status](https://travis-ci.org/ravens/docker-libmich-corenet.svg?branch=master)](https://travis-ci.org/ravens/docker-libmich-corenet)
+
+## status
+
+For the moment, just a basic configured environement to play with pycrate and corenet.
+
 ## prereqs
 
 A hosting machine with a kernel with SCTP support. "Native" Docker Mac does not support this, while the rest of the docker ecosystem is in good progress :
@@ -19,6 +25,6 @@ docker-compose build
 For the moment, we launch a jupyter notebook with no particular customization to import and play with pycrate and corenet code.
 
 ```
-docker-compose build
+docker-compose up
 ```
 
