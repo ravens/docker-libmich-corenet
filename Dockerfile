@@ -9,7 +9,6 @@ RUN pip3 install pycrypto
 RUN git clone https://github.com/mitshell/CryptoMobile.git
 WORKDIR /root/CryptoMobile
 RUN python3 setup.py install
-RUN python3 setup.py test
 WORKDIR /root
 RUN git clone https://github.com/P1sec/pysctp
 WORKDIR /root/pysctp
