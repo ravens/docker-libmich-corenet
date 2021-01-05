@@ -1,8 +1,6 @@
 # docker-libmich-corenet
 Recipe to build and run quickly corenet from Benoit Michau. 
 
-[![Build Status](https://travis-ci.org/ravens/docker-libmich-corenet.svg?branch=master)](https://travis-ci.org/ravens/docker-libmich-corenet)
-
 ## status
 
 For the moment, just a basic configured environement to play with pycrate and corenet.
